@@ -1,7 +1,7 @@
 
  [{	 
        
-     "key": "Series 1",
+     "key": "1er Arrondissement",
      "values": [ 
                 [ 1872 , 74286] ,
                 [ 1954 , 38926] ,
@@ -12,8 +12,8 @@
               
 },
 {	 
-    "arr" : 75102,     
-     "key": "Series 1",
+      
+     "key": "2ème Arrondissement",
      "values": [ 
                 [ 1872 , 73578] ,
                 [ 1954 , 43857] ,

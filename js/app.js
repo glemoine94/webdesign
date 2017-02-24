@@ -24,7 +24,7 @@ app.config([
 			.when('/home', {
 				templateUrl: 'partials/home.html',
 				controller: 'storeController',
-				controller:'navController'
+				controller: 'navController'
 			})
 			.when('/quartiers', {
 				templateUrl: 'partials/quartiers.html',
@@ -33,10 +33,9 @@ app.config([
 			.when('/arrondissement', {
 				templateUrl: 'partials/arrondissement.html',
 				controller: 'storeController',
-				controller:'navController',
-				//controller:'chartController'
+				controller: 'navController',
 			})
-			
+
 			.otherwise({
 				redirectTo: '/home' //par defaut
 			})
@@ -46,8 +45,8 @@ app.config([
 
 
 app.controller('mapController', [
-	'$http', '$scope','sharedProperties',
-	function ($http, $scope,sharedProperties) {
+	'$http', '$scope', 'sharedProperties',
+	function ($http, $scope, sharedProperties) {
 
 		var mapOptions = {
 			zoom: 12,
@@ -104,37 +103,24 @@ app.controller('storeController', [
 
 		$http.get('commerces.json').success(function (data) {
 			console.log("succes");
-				angular.forEach(data, function (value, key) {
-					if (value.fields.departement_commune == sharedProperties.getProperty()) {
-						$scope.exampleData = [
-							{ key: "supermarche", y: value.fields.supermarche },
-							{ key: "Hypermarche", y: value.fields.hypermarche },
-							{ key: "poissonnerie", y: value.fields.poissonnerie },
-							{ key: "superette", y: value.fields.superette },
-							{ key: "boulangerie", y: value.fields.boulangerie },
-							{ key: "epicerie", y: value.fields.epicerie },
-							{ key: "boucherie", y: value.fields.boucherie_charcuterie }
-						];
-						$scope.titre =  value.fields.libelle_de_commune;
-					
-					}
-				});
+			angular.forEach(data, function (value, key) {
+				if (value.fields.departement_commune == sharedProperties.getProperty()) {
+					$scope.exampleData = [
+						{ key: "supermarche", y: value.fields.supermarche },
+						{ key: "Hypermarche", y: value.fields.hypermarche },
+						{ key: "poissonnerie", y: value.fields.poissonnerie },
+						{ key: "superette", y: value.fields.superette },
+						{ key: "boulangerie", y: value.fields.boulangerie },
+						{ key: "epicerie", y: value.fields.epicerie },
+						{ key: "boucherie", y: value.fields.boucherie_charcuterie }
+					];
+					$scope.titre = value.fields.libelle_de_commune;
+
+				}
+			});
 		}).catch(function (err) {
 			console.log(err);
 		});
-
-				 $http.get('test.json').success(function (data) {
-						
-						var degueux = [];
-						degueux.push(data[0]);
-						console.log(degueux);
-						$scope.Data = degueux;
-				}).catch(function (err) {
-					console.log(err);
-				});
-
-			$scope.image = "image/" + (sharedProperties.getProperty()) + ".jpg";
-
 		var colorArray = ['#000000', '#660000', '#CC0000', '#FF6666', '#FF3333', '#FF6666', '#FFE6E6'];
 		$scope.colorFunction = function () {
 			return function (d, i) {
@@ -154,35 +140,25 @@ app.controller('storeController', [
 			};
 		}
 
+		$http.get('test.json').success(function (data) {
+
+			var listed = [];
+			listed.push(data[sharedProperties.getProperty() - 75101]);
+			console.log(listed);
+			$scope.Data = listed;
+		}).catch(function (err) {
+			console.log(err);
+		});
+
+		$scope.image = "image/" + (sharedProperties.getProperty()) + ".jpg";
+
+
+
 	}
 
 
 ]);
-/*app.controller('chartController', [
-	'$http', '$scope', 'sharedProperties',
-	function ($http, $scope, sharedProperties) {
-	 //var store = this;
-		//this.products = [];
 
-		//sharedProperties.getProperty  == code postal de l'arrondissement
-		$http.get('test.json').success(function (data) {
-
-			//$scope.findValue = function () {
-				angular.forEach(data, function (value, key) {
-					if (value.arr == sharedProperties.getProperty()) {
-						$scope.Datas = [{
-							"key" : "Series 1",
-							"values": value.Values} 
-						];
-					}
-				});
-		}).catch(function (err) {
-			console.log(err);
-		});
-		
-
-	}
-]);*/
 
 //controller permettant la création d'un tableau
 app.controller('tableController', [
@@ -205,8 +181,8 @@ app.controller('tableController', [
 
 
 app.controller('navController', [
-	'$http', '$scope','$route', '$location', 'sharedProperties',
-	function ($http, $scope,$route, $location, sharedProperties) {
+	'$http', '$scope', '$route', '$location', 'sharedProperties',
+	function ($http, $scope, $route, $location, sharedProperties) {
 		$http.get('liste.json').success(function (data) { // on récupère la liste de nos arrondissements et Cdp
 			$scope.listeArr = data.listeArr;
 		});
