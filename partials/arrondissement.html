@@ -1,7 +1,7 @@
 <div ng-controller="storeController">
     <h2>{{titre}}</h2>
 
-    <div class="thumbnail">
+    <div class="col-md-offset-2 col-md-8">
         <img  class="img-responsive" ng-src="{{image}}"   alt="oups"/>
     </div>
 
@@ -9,10 +9,10 @@
     <div class="col-md-6">
         <h3>Répartition des commerces</h3>
         <div class="jumbotron">
-
+        <!--affichage du graphique en camenbert -->
         <nvd3-pie-chart
             data="exampleData"
-            id="showLegendExample"
+            id="piechart"
             width="500"
             height="400"
             x="xFunction()"
@@ -29,19 +29,19 @@
 
     <div class="test2">
     <div class="col-md-6">
-        <h3>Graphique</h3>
+        <h3>Population en fonction des années</h3>
         <div class="jumbotron">
-
+        <!-- Affichage du graphique en ligne -->
        <nvd3-line-chart
     	data="Data"
-        id="showXAxisExample"
-        width="550"
-        height="300"
+        id="linechart"
+        width="500"
+        height="400"
         xAxisTickFormat="xAxisTickFormatFunction()"
         yAxisTickFormat="yAxisTickFormatFunction()"
         showXAxis="true"
         showYAxis="true">
-    		<svg ></svg>
+    		<svg height="250"></svg>
     </nvd3-line-chart>
             
     </div>

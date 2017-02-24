@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <h1>Les Arrondissements de Paris</h1>
-			<h2>Clic sur la carte pour obtenir des informations par arrondissement</h2>
-      
-<div ng-app="store" >
-   <!-- <script src="https://code.angularjs.org/1.3.15/angular.js"></script>
-    <script src="js/app.js"></script>
-  <script type="text/javascript" src="js/angular-route.js"/></script>
-    <script  
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTXectF_YxOYgvxZbPRuixNK_Ym8MWMGs&signed_in=true">
-    </script>-->
- 
-      <div ng-controller="mapController" class ="container" id="mapcontainer" >
-        <div  id="map" href={'#/' + map.event.feature.f.'c_ar'}  >
-        </div>
-      </div>
-</div>
-			<h2>Utilise le tableau pour comparer les différents arrondissements entre eux</h2>
-
-
-<div class="container" >
-  <div class="alert alert-info"> <!--on crée un champ de message d'alerte avec une class bootstrap qui contiendra nos choix de filtre et recherche-->
-    <p >Type de tri : {{ sortType }}</p><!-- on affiche le type de tri selectionné-->
-    <p >Sens de tri : {{ sortReverse }}</p><!--on affiche le sens de tri selectionné-- -->
-    <p >Mot clé recherché : {{ searchService }}</p><!--on affiche le mot clé recherché-->
+<h2>Cliquer sur la carte pour obtenir des informations par arrondissement</h2>
+<div ng-app="store">
+  <div ng-controller="mapController" class="container" id="mapcontainer">
+    <div id="map" href={ '#/' + map.event.feature.f. 'c_ar'}>
+      <!--affichage de la google map-->
+    </div>
   </div>
-  
-  <form> 
+</div>
+<h2>Utiliser le tableau pour comparer les différents arrondissements entre eux</h2>
+<div class="container">
+  <div class="alert alert-info">
+    <!--on crée un champ de message d'alerte avec une class bootstrap qui contiendra nos choix de filtre et recherche-->
+    <p>Type de tri : {{ sortType }}</p>
+    <!-- on affiche le type de tri selectionné-->
+    <p>Sens de tri : {{ sortReverse }}</p>
+    <!--on affiche le sens de tri selectionné-- -->
+    <p>Mot clé recherché : {{ searchService }}</p>
+    <!--on affiche le mot clé recherché-->
+  </div>
+  <form>
     <div class="form-group">
-      <div class="input-group"><!--on cré un champ de saisi pour la recherche-->
-        <div class="input-group-addon"><i class="fa fa-search"></i></div><!--on utlise la lcasse fa-search de font-awesome pour importe l'icone loupe de la recherche-->
-        <input type="text" class="form-control" placeholder="Chercher un nom d'arrondissement" ng-model="searchService"><!--on utlise un placeholder pour l'aide à la complétion et un ng-model qui nous permettra de récupérer la selection et de l'affihcer dans le champ d'alerte-->
-      </div>      
+      <div class="input-group">
+        <!--on cré un champ de saisi pour la recherche-->
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+        <!--on utlise la lcasse fa-search de font-awesome pour importe l'icone loupe de la recherche-->
+        <input type="text" class="form-control" placeholder="Chercher un nom d'arrondissement" ng-model="searchService">
+        <!--on utlise un placeholder pour l'aide à la complétion et un ng-model qui nous permettra de récupérer la saisie et de l'afficher dans le champ d'alerte-->
+      </div>
     </div>
   </form>
-  
-  <table class="table table-bordered table-striped"><!--on crée un jolie tableau grace aux class bootstrap-->
-    
+  <table class="table table-bordered table-striped">
+    <!--on crée un jolie tableau grace aux class bootstrap-->
     <thead>
       <tr>
         <td>
-          <a  ng-click="sortType = 'fields.libelle_de_commune'; sortReverse = !sortReverse"><!-- on récupere le champs de tri cliqué et le sens de tri-->
-            Numéro d'arrondissement 
-            <span ng-show="sortType == 'fields.libelle_de_commune' && !sortReverse" class="fa fa-caret-down"></span><!--on affiche la fleche en fonction de la zone de click et du sens de tri -->
-            <span ng-show="sortType == 'fields.libelle_de_commune' && sortReverse" class="fa fa-caret-up"></span><!--on utilise les class fa-carpet de font-awesome pour importer l'icone triangulaire de tri-->
+          <a ng-click="sortType = 'fields.libelle_de_commune'; sortReverse = !sortReverse">
+            <!-- on récupere le champs de tri cliqué et le sens de tri-->
+            Numéro d'arrondissement
+            <span ng-show="sortType == 'fields.libelle_de_commune' && !sortReverse" class="fa fa-caret-down"></span>
+            <!--on affiche la fleche en fonction de la zone de click et du sens de tri -->
+            <span ng-show="sortType == 'fields.libelle_de_commune' && sortReverse" class="fa fa-caret-up"></span>
+            <!--on utilise les class fa-carpet de font-awesome pour importer l'icone triangulaire de tri-->
           </a>
         </td>
-		<td>
-          <a  ng-click="sortType = 'fields.nom_arr'; sortReverse = !sortReverse">
+        <td>
+          <a ng-click="sortType = 'fields.nom_arr'; sortReverse = !sortReverse">
             Nom d'arrondissement 
             <span ng-show="sortType == 'fields.nom_arr' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'fields.nom_arr' && sortReverse" class="fa fa-caret-up"></span>
           </a>
         </td>
         <td>
-          <a  ng-click="sortType = 'fields.population_2010'; sortReverse = !sortReverse">
+          <a ng-click="sortType = 'fields.population_2010'; sortReverse = !sortReverse">
           Population
             <span ng-show="sortType == 'fields.population_2010' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'fields.population_2010' && sortReverse" class="fa fa-caret-up"></span>
@@ -66,21 +65,21 @@
             <span ng-show="sortType == 'fields.restaurant' && sortReverse" class="fa fa-caret-up"></span>
           </a>
         </td>
-		 <td>
+        <td>
           <a ng-click="sortType = 'fields.coiffure'; sortReverse = !sortReverse">
           Nombre de coiffeurs
             <span ng-show="sortType == 'fields.coiffure' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'fields.coiffure' && sortReverse" class="fa fa-caret-up"></span>
           </a>
         </td>
-		 <td>
+        <td>
           <a ng-click="sortType = 'fields.veterinaire'; sortReverse = !sortReverse">
           Nombre de vétérinaires 
             <span ng-show="sortType == 'fields.veterinaire' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'fields.veterinaire' && sortReverse" class="fa fa-caret-up"></span>
           </a>
         </td>
-		 <td>
+        <td>
           <a ng-click="sortType = 'fields.agence_immobiliere'; sortReverse = !sortReverse">
          Nombre de d'agences immobilières
             <span ng-show="sortType == 'fields.agence_immobiliere' && !sortReverse" class="fa fa-caret-down"></span>
@@ -89,20 +88,18 @@
         </td>
       </tr>
     </thead>
-    
-    <tbody><!--on affiche les données de chaques collonnes en utlisant deux des variables que nous avons créées précédemment ($Scope.sortType et $scope.sortReverse). on utilise également le filtre Angular orderBy. 
+    <tbody>
+      <!--on affiche les données de chaques collonnes en utlisant deux des variables que nous avons créées précédemment ($Scope.sortType et $scope.sortReverse). on utilise également le filtre Angular orderBy. 
 	 on effectue une boucle avec ng-repeat pour afficher toutes les données du json-->
       <tr ng-repeat="x in service | orderBy:sortType:sortReverse | filter:searchService">
         <td>{{ x.fields.libelle_de_commune }}</td>
-		    <td>{{ x.fields.nom_arr}}</td>
+        <td>{{ x.fields.nom_arr}}</td>
         <td>{{ x.fields.population_2010 }}</td>
         <td>{{ x.fields.restaurant }}</td>
-		    <td>{{ x.fields.coiffure}}</td>
-		    <td>{{ x.fields.veterinaire}}</td>
-		    <td>{{ x.fields.agence_immobiliere}}</td>
+        <td>{{ x.fields.coiffure}}</td>
+        <td>{{ x.fields.veterinaire}}</td>
+        <td>{{ x.fields.agence_immobiliere}}</td>
       </tr>
     </tbody>
-    
   </table>
-  
 </div>
