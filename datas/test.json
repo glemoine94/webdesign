@@ -1,0 +1,373 @@
+{
+    "nhits": 20,
+    "parameters": {
+        "dataset": [
+            "arrondissements"
+        ],
+        "timezone": "UTC",
+        "rows": 10,
+        "format": "json"
+    },
+    "records": [
+        {
+            "datasetid": "arrondissements",
+            "recordid": "fdcdd162efd8d445fdecb7b95ed7df1ff4c59f26",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 4554.10435957,
+                "objectid": 2,
+                "l_ar": "2ème Ardt",
+                "geom_x_y": [
+                    48.86827922252252,
+                    2.3428025468913636
+                ],
+                "surface": 991153.74474596,
+                "longueur": 4553.93876373,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000002,
+                "l_aroff": "Bourse",
+                "c_arinsee": 75102,
+                "c_ar": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3428025468913636,
+                    48.86827922252252
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "469806e90b8b4676461b1845f113b25397cd5241",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 4519.26364836,
+                "objectid": 3,
+                "l_ar": "3ème Ardt",
+                "geom_x_y": [
+                    48.86287238001689,
+                    2.3600009858976927
+                ],
+                "surface": 1170882.82818778,
+                "longueur": 4519.07198175,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000003,
+                "l_aroff": "Temple",
+                "c_arinsee": 75103,
+                "c_ar": 3
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3600009858976927,
+                    48.86287238001689
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "e8ec3494fa75e33f9cc5308108db755f2bafbd7c",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 24089.6662978,
+                "objectid": 12,
+                "l_ar": "12ème Ardt",
+                "geom_x_y": [
+                    48.83497438148051,
+                    2.421324900784681
+                ],
+                "surface": 16314782.6372674,
+                "longueur": 24088.03892205,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000012,
+                "l_aroff": "Reuilly",
+                "c_arinsee": 75112,
+                "c_ar": 12
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.421324900784681,
+                    48.83497438148051
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "8fe22d8449b1433ba742f99b715630e9d3715c11",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 10317.4833099,
+                "objectid": 14,
+                "l_ar": "14ème Ardt",
+                "geom_x_y": [
+                    48.829244500489835,
+                    2.3265420441989453
+                ],
+                "surface": 5614877.30907921,
+                "longueur": 10316.72025836,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000014,
+                "l_aroff": "Observatoire",
+                "c_arinsee": 75114,
+                "c_ar": 14
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3265420441989453,
+                    48.829244500489835
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "eced6854a5659cd2345e2b5e4f685f11b91719f3",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 10704.9404863,
+                "objectid": 20,
+                "l_ar": "20ème Ardt",
+                "geom_x_y": [
+                    48.86346057889556,
+                    2.4011881292846864
+                ],
+                "surface": 5983446.03718297,
+                "longueur": 10704.48377412,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000020,
+                "l_aroff": "Ménilmontant",
+                "c_arinsee": 75120,
+                "c_ar": 20
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.4011881292846864,
+                    48.86346057889556
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "fd746ffccedf5bb7893b6ec2d7c8daf24a6f1fb5",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 6054.93686218,
+                "objectid": 1,
+                "l_ar": "1er Ardt",
+                "geom_x_y": [
+                    48.86256270183605,
+                    2.3364433620533847
+                ],
+                "surface": 1824612.86048666,
+                "longueur": 6054.68086176,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000001,
+                "l_aroff": "Louvre",
+                "c_arinsee": 75101,
+                "c_ar": 1
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3364433620533847,
+                    48.86256270183605
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "437ce5d06deeb12a187baea9fbd3e15c2ae87852",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 5420.90843368,
+                "objectid": 4,
+                "l_ar": "4ème Ardt",
+                "geom_x_y": [
+                    48.854341426272896,
+                    2.357629620324993
+                ],
+                "surface": 1600585.63150251,
+                "longueur": 5420.63677909,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000004,
+                "l_aroff": "Hôtel-de-Ville",
+                "c_arinsee": 75104,
+                "c_ar": 4
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.357629620324993,
+                    48.854341426272896
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "7bcc7f1f99ac38e3a77e21d756814ac84816317e",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 7880.53326819,
+                "objectid": 8,
+                "l_ar": "8ème Ardt",
+                "geom_x_y": [
+                    48.87272083743446,
+                    2.3125540224020638
+                ],
+                "surface": 3880036.39704363,
+                "longueur": 7880.26066073,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000008,
+                "l_aroff": "Élysée",
+                "c_arinsee": 75108,
+                "c_ar": 8
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3125540224020638,
+                    48.87272083743446
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "90ed876ccb7866656cf07118ea026d5ea35263e8",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 11253.1824786,
+                "objectid": 19,
+                "l_ar": "19ème Ardt",
+                "geom_x_y": [
+                    48.887075996572506,
+                    2.3848209601525143
+                ],
+                "surface": 6792651.12902648,
+                "longueur": 11252.94322851,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000019,
+                "l_aroff": "Buttes-Chaumont",
+                "c_arinsee": 75119,
+                "c_ar": 19
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3848209601525143,
+                    48.887075996572506
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        },
+        {
+            "datasetid": "arrondissements",
+            "recordid": "f95709bd7c52abb273b52742963415aee5ac7f8f",
+            "fields": {
+                "n_sq_co": 750001537,
+                "perimetre": 6471.5882901,
+                "objectid": 9,
+                "l_ar": "9ème Ardt",
+                "geom_x_y": [
+                    48.87716351732886,
+                    2.3374575434825466
+                ],
+                "surface": 2178303.27487137,
+                "longueur": 6471.38914439,
+                "geom": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            (toomanyelementstopreview)
+                        ]
+                    ]
+                },
+                "n_sq_ar": 750000009,
+                "l_aroff": "Opéra",
+                "c_arinsee": 75109,
+                "c_ar": 9
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3374575434825466,
+                    48.87716351732886
+                ]
+            },
+            "record_timestamp": "2017-01-31T23:01:44+00:00"
+        }
+    ]
+}

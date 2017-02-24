@@ -1,0 +1,43 @@
+{
+    "listeArr" : [
+{   "arr":"1er Arrondissement",
+    "postalCode" : "75101"},{
+ "arr": "2eme Arrondissement",
+"postalCode" : "75102"},{
+ "arr": "3eme Arrondissement",
+"postalCode" : "75103"},{
+ "arr": "4eme Arrondissement",
+"postalCode" : "75104"},{
+ "arr": "5eme Arrondissement",
+"postalCode" : "75105"},{
+ "arr": "6eme Arrondissement",
+"postalCode" : "75106"},{
+ "arr": "7eme Arrondissement",
+"postalCode" : "75107"},{
+ "arr": "8eme Arrondissement",
+"postalCode" : "75108"},{
+ "arr": "9eme Arrondissement",
+"postalCode" : "75109"},{
+ "arr": "10eme Arrondissement",
+"postalCode" : "75110"},{
+ "arr": "11eme Arrondissement",
+"postalCode" : "75111"},{
+ "arr": "12eme Arrondissement",
+"postalCode" : "75112"},{
+ "arr": "13eme Arrondissement",
+"postalCode" : "75113"},{
+ "arr": "14eme Arrondissement",
+"postalCode" : "75114"},{
+ "arr": "15eme Arrondissement",
+"postalCode" : "75115"},{
+ "arr": "16eme Arrondissement",
+"postalCode" : "75116"},{
+ "arr": "17eme Arrondissement",
+"postalCode" : "75117"},{
+ "arr": "18eme Arrondissement",
+"postalCode" : "75118"},{
+ "arr": "19eme Arrondissement",
+"postalCode" : "75119"},{
+ "arr": "20eme Arrondissement",
+ "postalCode": "75120"}]
+}
